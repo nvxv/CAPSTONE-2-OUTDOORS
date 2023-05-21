@@ -1,0 +1,80 @@
+
+
+CAPSTONE 2
+
+ENJOY THE OUTDOORS WEBSITE
+
+
+Homepage
+
+
+Simple organization
+index.html
+
+DESC:
+Homepage that links to two other pages
+- National Parks Search Page
+- Mountains Information Page
+
+
+
+National Parks Search Page
+national.html
+
+DESC:
+Search through array located inside nationalParkData.js
+- By Location
+	- This option allows users to select state/territory from a drodown
+	- Park "Location" should match "State" property
+Serch through array located inside parkTypeData.js
+- By Park Type
+	- This oprtion allows users to selected a park type from drop down
+	- Park "LocationName" should match the contents of the description
+
+OPTIONS
+
+RADIO BUTTONS OR SEARCH TYPES DROP DOWN
+
+
+
+
+Mountains Information Page
+mountains.html
+
+DESC:
+Search through array located inside mountainData.js
+Dropdown list of 48 mountains
+- Select Mountain to Display
+	- Mountain Name
+	- Description
+	- Elevation
+	- Any other information you find interesting about the mountain
+
+CAPSTONE CRITERIA
+
+
+NAVIGATION 
+- HEADER, NAVBAR, FOOTER
+
+RESPONSIVE USER INTERFACE
+
+PUBLIC REPO WITH BRANCHING AND COMMIT HISTORY
+
+READ ME 
+- Description
+- Images of Project Pages
+- Example JS code
+
+BEST PRACTICES
+- Directory Structure
+- Naming conventions
+- HTML, CSS, JS formatting
+- HTML element names and JS variables/functions
+- Comments
+- No errors
+
+
+
+
+
+	
