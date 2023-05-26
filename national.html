@@ -2,58 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parks Page</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 
-    <script defer src="scripts/mainNational.js"></script>
-    <script defer src="scripts/locationData.js"></script>
-    <script defer src="scripts/nationalParkData.js"></script>
-    <script defer src="scripts/parkTypeData.js"></script>
-    <script defer src="scripts/main.js"></script>
-
+  <script defer src="scripts/nationalParkData.js"></script>
+  <script defer src="scripts/parkTypeData.js"></script>
+  <script defer src="scripts/mainNational.js"></script>
 </head>
 
-
-<nav id="navbar" class="nav">
+<body>
+  <nav id="navbar" class="nav">
     <h1 id="header">ENJOY THE OUTDOORS</h1>
     <ul class="nav-list">
-        <li><a href="index.html">Event Handling</a></li>
-        <li><a href="national.html">Metric</a></li>
-        <li><a href="mountains.html">Multiply</a></li>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="national.html">National Parks</a></li>
+      <li><a href="mountains.html">Mountains</a></li>
     </ul>
-</nav>
+  </nav>
 
-
-<body>
-    <div id="body5">
-        <body class="main-body">
-        <header id="header">
-            <img>
-        </header>
-        
-            <h1>NATIONAL PARKS</h1>
-            <p></p>
-            <h3>Welcome to the outdoors</h3>>
-            <img>
-            <p></p>
-            <h4><i></i></h4>
-            <p></p>
+  <div id="page-container">
+    <div id="main-content">
+      <h1>PARKS PAGE</h1>
+      <h3>Welcome to the outdoors</h3>
+      <h4>Search Parks By State / Type</h4>
+      <select name="parkLocationSelect" id="parkLocationSelect">
+        <option value="">Click here to choose a state...</option>
+      </select>
+      <select name="parkTypeSelect" id="parkTypeSelect">
+        <option value="">Click here to choose a type...</option>
+      </select>
+      <main id="parkLocationDetails" name="parkLocationDetails"></main>
     </div>
+
+    <footer>
+      <p>For more information please contact capstone@cap.stone.org</p>
+      <p>Thank you for checking out this awesome new site.</p>
+    </footer>
+  </div>
 </body>
-<footer>
-    <p>For more information please contact capstone@cap.stone.org</p>
-    <p>Thank you for checking out this awesome new site.</p>
-</footer>
-
-
 </html>

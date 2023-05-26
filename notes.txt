@@ -28,7 +28,7 @@ Search through array located inside nationalParkData.js
 	- Park "Location" should match "State" property
 Serch through array located inside parkTypeData.js
 - By Park Type
-	- This oprtion allows users to selected a park type from drop down
+	- This option allows users to selected a park type from drop down
 	- Park "LocationName" should match the contents of the description
 
 OPTIONS
