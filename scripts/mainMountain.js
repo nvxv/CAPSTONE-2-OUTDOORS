@@ -24,10 +24,24 @@ function displayMountainDetails(event) {
  
     // Display the mountain information
     mountainDetails.innerHTML = `
-      <h2>${selectedMountainObj.name}</h2>
-      <img src="images/${selectedMountainObj.img}" alt="${selectedMountainObj.name}">
-      <p>Description: ${selectedMountainObj.desc}</p>
-      <p>Elevation: ${selectedMountainObj.elevation}</p>
+      <div class="card">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img 
+              class="img-fluid rounded-start img-custom" 
+              src="./images/${selectedMountainObj.img}" 
+              alt="${selectedMountainObj.name}" 
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">${selectedMountainObj.name}</h2>
+              <p>Description: ${selectedMountainObj.desc}</p>
+              <p>Elevation: ${selectedMountainObj.elevation}</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Display any other relevant mountain information -->
     `;
   }
@@ -36,4 +50,4 @@ function displayMountainDetails(event) {
 mountainSelect.addEventListener("change", displayMountainDetails);
 
 // Call the function to populate the mountain dropdown initially
-populateMountainDropdown();
+populateMountainDropdown(); 

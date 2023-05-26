@@ -35,7 +35,12 @@ function displayParks() {
     (parkData) => {
       return (
         parkData.State === selectedState 
-          && parkData.LocationName.includes(selectedParkType)
+          && parkData
+            .LocationName
+            .toLowerCase()
+            .includes(
+              selectedParkType.toLowerCase()
+            )
       )
     }
   );
