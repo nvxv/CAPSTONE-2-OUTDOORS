@@ -45,6 +45,9 @@ function displayParks() {
     }
   );
   
+  // parkData.Staate === selectedState && parkData.LocationName.toLowerCase().includes(selectedParkType.toLowerCase)
+
+
   // choose details you want displayed
   const displayDetails = ["Address", "City", "State", "ZipCode", "Phone", "Fax", "Longitude", "Latitude"];
   matchingParks.forEach((currentPark) => {
@@ -59,7 +62,8 @@ function displayParks() {
               <ul class="list-group list-group-flush">
                 ${
                   Object
-                    .entries(currentPark) /*
+                    .entries(currentPark) 
+                    /*
                       [
                         ["Phone", "(321) 367-9000"],
                         ["LocationName", "Bingo City"],
